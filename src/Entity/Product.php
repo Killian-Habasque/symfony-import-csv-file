@@ -23,8 +23,20 @@ class Product
     {
         return $this->id;
     }
-    public function getName(): ?int
+    public function getName(): ?string
     {
         return $this->name;
+    }
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+    public function setName($name): void
+    {
+        $this->name = $name;
+    }
+    public function setDescription($description): void
+    {
+        $this->description = $description;
     }
 }
